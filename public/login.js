@@ -3,7 +3,12 @@
     angular.module('app').directive('myLogin',function(){
         return {
             restrict:'AEC',
-            templateUrl: 'login.html'
+            templateUrl: 'login.html',
+            scope:{
+                user:'='
+            },
+            controller: 'LoginCtrl as loginCtrl'
+        
         }
     });
 })();

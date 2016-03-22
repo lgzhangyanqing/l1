@@ -6,11 +6,15 @@
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.css">
 </head>
-<body ng-app="app" ng-controller="LoginCtrl as login">
-    <my-login></my-login>
+<body ng-app="app">
     <!--    <div class="my-login"></div>-->
-    <div ng-show ="!!login.user">Welcome, {{login.user.username}},
-        <a class="btn btn-danger" ng-click="login.logout()">Logout</a>
+    <!-- <div ng-include="'login.html'"></div>-->
+    <my-login></my-login>
+    <div ng-controller="MainCtrl">
+        <div ng-show="!!loginInfo.username">
+        Welcome, {{loginInfo.username}},
+             <a class="btn btn-danger" ng-click="logout()">Logout</a>
+        </div>
     </div>
     <script src="app.js"></script> 
     <script src="login.js"></script> 
