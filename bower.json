@@ -1,0 +1,23 @@
+{
+  "name": "l1",
+  "description": "",
+  "main": "",
+  "authors": [
+    "lgzhangyanqing <lgzhangyanqing@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "angular": "^1.5.2"
+  }
+}
